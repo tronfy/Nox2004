@@ -1,0 +1,108 @@
+
+@import '../StyleVariables/StyleVariables';
+
+.GamePreviewGrid 
+{
+  position: relative;
+  width: 70vw;
+  margin: auto auto;
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  border: 20px solid var(--primary-color-1);
+  background-color: var(--primary-color-1);
+
+  box-shadow: -20px 20px var(--primary-color-2);
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) 
+{
+  .GamePreviewGrid 
+  {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+@media (max-width: 750px) 
+{
+  .GamePreviewGrid 
+  {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+@media (max-width: 600px) 
+{
+  .GamePreviewGrid 
+  {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+
+.GamePreviewContainer
+{
+  aspect-ratio: 4/3;
+  object-fit: contain;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  img
+  {
+    display:block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  //   position: absolute;
+  //   width : 100%;
+  //   height : 100%;
+  //   object-fit: cover;
+  }
+  .GamePreviewText
+  {
+    position: absolute;
+    width : 100%;
+    height : 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    font-family: $font-family;
+    
+    background: color-mix(in srgb, var(--primary-color-1) 75%, transparent);
+    opacity: 0;
+    transform: translateY(10%);
+    transition: 0.5s ease-out;
+
+    h4
+    {
+      color: var(--accent-color-3);
+      text-align: center;
+
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+
+    h5
+    {
+      color: var(--accent-color-2);
+      text-align: center;
+
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+  }
+  .GamePreviewText:hover 
+  {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+

@@ -1,0 +1,338 @@
+@import '../StyleVariables/StyleVariables';
+
+.portifolio-game-list
+{
+    width : 100vw;
+    display: flex;
+    flex-direction: column;
+
+    .portifolio-game-item-container
+    {
+        position: relative;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        width: 100%;
+        background-color: var(--background-color);
+
+        transform: scale(1);
+        transition: 0.3s ease-out;
+        &:hover 
+        {
+            transform: scale(1.05);
+        }
+
+        &:nth-child(even)
+        {
+            background-color: var(--accent-color-3);
+
+            .curve 
+            {
+                transform: scaleY(-1);
+                .shape-fill
+                {
+                    fill: var(--accent-color-3);
+                }
+            }
+
+            .game 
+            {
+                flex-direction: row-reverse;
+
+                @keyframes portfolio-appear-animation-left
+                {
+                    from {transform: translateX(-40%);}
+                    to {transform: translateX(0%);}
+                }
+                animation : portfolio-appear-animation-left 1s ease-in-out forwards;
+                animation-timeline: view();
+                animation-range: 0% 25%;
+                
+                .text
+                {
+                    margin-left: 2rem;
+                    margin-right: 0;
+                    h3
+                    {
+                        color : var(--primary-color-1);
+                        text-shadow: var(--accent-color-1) -0.03rem 0.3rem;
+                    }
+
+                    h4
+                    {
+                        color : var(--primary-color-2);
+                    }
+                }
+
+                .image
+                {
+                    .image-wrapper
+                    {
+                        border-radius: 0 1rem 1rem 0;
+
+                        h5 
+                        {
+                            right: auto;
+                            left: 0rem;
+                            border-radius : 0 0.2rem 0.2rem 0;
+                        }
+                    }
+                }
+            }
+
+            .download-button
+            {
+
+                &:hover i
+                {
+                    color: var(--accent-color-3);
+                }
+            }
+        }
+
+        .curve {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+            transform-origin: 50% calc(50% + 0.5px);
+            svg {
+                position: relative;
+                display: block;
+                width: calc(100% + 1.3px);
+                height: 31px;
+            }
+            .shape-fill {
+                fill: var(--background-color);
+            }
+        }
+
+        .game 
+        {
+            width : 90%;
+            margin : 1vh auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            @keyframes portfolio-appear-animation-right {
+                0% {transform: translateX(40%);}
+                100% {transform: translateX(0%);}
+            }
+            animation : portfolio-appear-animation-right 1s ease-out forwards;
+            animation-timeline: view();
+            animation-range: 0% 25%;
+
+            .text
+            {
+                margin-right: 2rem;
+                width : 100%;
+                h3
+                {
+                    text-align: center;
+
+                    color : var(--primary-color-1);
+                    text-shadow: var(--accent-color-1) -0.03rem 0.3rem;
+
+                    margin-bottom: 1rem;
+                }
+
+                h4
+                {
+                    color : var(--accent-color-2);
+                    text-align: justify;
+                }
+
+                .tags
+                {
+                    display: flex;
+                    flex-direction: row;
+                    align-content: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+
+                    gap: 1rem;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    h5
+                    {
+                        padding: 0.1rem 0.4rem;
+                        border-radius: 2rem;
+                        background-color: var(--accent-color-2);
+                        color: var(--primary-color-1);
+
+                        &:hover
+                        {
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+
+            .image
+            {
+                position: relative;
+                width: 40vw;
+                display: flex;
+                align-items: center;
+
+                .image-wrapper
+                {
+                    position: relative;
+
+                    width: 100%;
+                    aspect-ratio: 4/3;
+                    
+                    border-radius: 1rem;
+
+                    img
+                    {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 1rem;
+                    }
+                    h5 
+                    {
+                        position: absolute;
+                        right: 0rem;
+                        bottom: 1rem;
+                        padding: 0.1rem 0.5rem;
+
+                        border-radius : 0.2rem 0 0 0.2rem;
+                        background-color: var(--accent-color-2);
+                        color : var(--primary-color-1);
+                    }
+                }
+            }
+        }
+
+        .download-button
+        {
+            position: relative;
+            
+            width: max(15%, 10rem);
+            padding: 0.7rem 0;
+            margin: 1rem auto;
+            border: 0.5rem solid var(--primary-color-1);
+            border-radius: 1rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            overflow: hidden;
+
+            box-shadow : -0.4rem 0.4rem var(--primary-color-2);
+            transition: 0.3s ease-out;
+
+            &:hover 
+            {
+                transform: translateX(-0.3rem) translateY(0.3rem);
+                box-shadow : -0.1rem 0.1rem var(--primary-color-2);
+            }
+
+            i 
+            {
+                margin: auto auto;
+                font-size: 2rem;
+                z-index: 2;
+
+                color: var(--primary-color-1);
+                text-shadow : none;
+
+                transition: 0.3s ease-out;
+            }
+
+            .fill 
+            {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: var(--primary-color-1);
+                transition: 0.3s ease-out;
+
+                transform: scaleY(0);
+                transform-origin: top;
+
+                padding: 1rem;
+            }
+
+            &:hover .fill
+            {
+                transform: scaleY(1);
+            }
+
+            &:hover i
+            {
+                color: var(--background-color);
+                text-shadow: -.0rem 0.2rem var(--primary-color-2);
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .portifolio-game-list
+    {
+        .portifolio-game-item-container
+        {
+            &:nth-child(even)
+            {
+                .game 
+                {
+                    flex-direction: column-reverse;
+                    .text 
+                    {
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        h3
+                        {
+                            text-align: center;
+                        }
+                        h4 
+                        {
+                            text-align: center;
+                        }
+                    }
+                }
+                
+            }
+
+            .game 
+            {
+                flex-direction: column-reverse;
+                gap : 1rem;
+                .text
+                {
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    h3
+                    {
+                        text-align: center;
+                    }
+                    h4 
+                    {
+                        text-align: center;
+                    }
+                }
+
+                .image
+                {
+                    width: 90vw;
+                    .image-wrapper
+                    {
+                        aspect-ratio: 16/9;
+                    }
+                }
+            }
+        }
+    }
+}

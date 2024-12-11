@@ -1,0 +1,290 @@
+{
+    "header" : {
+        "home" : "HOME",
+        "portfolio" : "PORTFOLIO",
+        "resume" : "RESUME",
+        "about" : "ABOUT"
+    },
+    "main-page-header" : {
+        "message1" : "Hi i'm",
+        "message2" : "Game Designer and Programmer",
+        "message3" : "welcome to my little slice of the internet. I have been studying and developing games since I was a child. Below you will find some of my projects."
+    },
+    "call-to-action" : {
+        "message1" : "Need a Game Designer?",
+        "message2" : "Lets work together!"
+    },
+    "footer" : {
+        "contact-info" : "Contact info (click to copy):",
+        "email" : "Email: ",
+        "phone" : "Phone: "
+    },
+    "portfolio" :
+    {
+        "message1" : "Portfolio:",
+        "message2" : "Check out some of the games I've worked! (The ones in a playable state)"
+    },
+    "games" : 
+    {
+        "test" : {
+            "title" : "Title",
+            "description" : "description",
+            "short-description" : "Mini-description",
+            "date" : "May 2020"
+        },
+        "toys-and-signs" : {
+            "title" : "Toys n' Signs",
+            "description" : "The Toys n' Signs project is a mobile game that aims to teach different Sign Languages (e.g. libras) to children using a fun and ludic 'shooter' approach. The gameplay revolves around choosing and combining upgrades that you receive upon answering quizzes on sign language. It was made during the course of 6 months as an academic project.",
+            "short-description" : "Educational Game",
+            "date" : "July 2024"
+        },
+        "nuts-and-bolts" : {
+            "title" : "Nuts & Bolts",
+            "description" : "Nuts & Bolts is a assymetric multiplayer game I worked on as an academic project. In this 2-player game, players must play different roles, as a doctor and its assistent. The players will face different challenges and must collaborate in order to mantain their patient alive (oh and they are also robots!).",
+            "short-description" : "Assymetrical Multiplayer",
+            "date" : "December 2023"
+        },
+        "untitled-space-shooter-game" : {
+            "title" : "Untitled Space Shooter Game",
+            "description" : "Untitled Shooter Game is basically one of my previous games, Space Invaders 3.0 (which - for instance - is a remake of another previous personal project of mine, Space Invaders 2.0), but I added an online multiplayer mode to it. I was really excited to try out the new GameMaker RollBack System at the time.",
+            "short-description" : "Multiplayer Space Shooter",
+            "date" : "August 2022"
+        },
+        "roll-your-life" : {
+            "title" : "Roll Your Life",
+            "description" : "Roll Your Life is a game created for the GMTK Jam 2022. The choosen theme for the jam was 'Roll the Dice', so we created a noir style 'choices matter' game about a die that is being forced to work at a casino. The game made it to 89th place overall (of 6,109 entries) and 19th place in creativity category. This is the greatest jam we participated yet and I am very proud we got so far!",
+            "short-description" : "GMTK 2022",
+            "date" : "July 2022"
+        },
+        "my-happy-planet" : {
+            "title" : "My Happy Planet",
+            "description" : "The first game I worked on as an academic project. At the time my group was assigned with the task of creating a game that critique environmental pollution. So we created this idle game where the player assumes the role of the 'villain' and must make a lot of money by creating factories and polluting the planet (the game has a twist at the end, as you can probably imagine).",
+            "short-description" : "Idle Game",
+            "date" : "May 2022"
+        },
+        "hey-brother" :
+        {
+            "title" : "Hey Brother",
+            "description" : "Hey Brother is a collection of minigames centered around 2 brothers who keep arguing and fighting in some pretty unexpected ways. The game was a submission to the 7th edition of game jaaj (304 entries), and got 2nd place overall.",
+            "short-description" : "Game Jaaj 7",
+            "date" : "January 2022"
+        },
+        "drinking-water-midnight" :
+        {
+            "title" : "Drinking Water at Midnight",
+            "description" : "Drinking Water Midnight is a game I created to celebrate 2021 Halloween, and is a short horrorish game based on the fear I had of going to the kitchen to get water late at night as a child.",
+            "short-description" : "Spoooky Game",
+            "date" : "October 2021"
+        },
+        "space-invaders-3-0" :
+        {
+            "title" : "Space Invaders 3.0",
+            "description" : "This is a remake of my previous game 'Space Invaders 2.0', which I created as a birthday gift for my father. Since 2 years have passed I got to make something way better with new graphics, power ups, enemys, and a simple bossfight.",
+            "short-description" : "Space Shooter",
+            "date" : "April 2021"
+        },
+        "the-unknown" :
+        {
+            "title" : "The Unknown",
+            "description" : "The Unknown is a mistery plataform game / ARG created for fifth edition of the game jaaj jam. The game revolves around the mechanic of using your pet as a plataform and has a hidden layer of lore behinds each corner (which, for technical reasons, are only available in brazilian portuguese).",
+            "short-description" : "Game Jaaj 5",
+            "date" : "January 2021"
+        },
+        "sinuca-attack-console" :
+        {
+            "title" : "Sinuca Attack (Console Ver.)",
+            "description" : "This is the console version of the puzzle game Sinuca Attack, published by East Asia Soft, you can play it at a PlayStation, Xbox or Switch. You can read more about sinuca attack in the entry below, as this is a slightly more polished version of the game with a couple more levels and visuals to it.",
+            "short-description" : "Puzzle Game",
+            "date" : "July 2020"
+        },
+        "sinuca-attack" :
+        {
+            "title" : "Sinuca Attack (Jam Ver.)",
+            "description" : "Sinuca attack is a plataform/puzzle game created for corona jam, a big brazilian game jam. Its gameplay revolve snooker-based mechanics which combine puzzle and platforming. It was the game I had the most fun idealizing and designing. At the end of the jam we won the first place for 'technical quality' category!",
+            "short-description" : "Corona Jam",
+            "date" : "March 2020"
+        },
+        "evolutron" :
+        {
+            "title" : "Evolutron Revolution Rampage...",
+            "description" : "Evolutron is a local multiplayer game centered around evolution and upgrades, you start as a little worm and make your way to the top of the insect food chain. Since the game is a roguelike, this was the first time I messed around with procedural generation. This is also one of the first game projects in which I wasn't working alone!",
+            "short-description" : "Roguelike",
+            "date" : "February 2020"
+        },
+        "space-invaders-2" :
+        {
+            "title" : "Space Invaders 2.0",
+            "description" : "I made this one at father's day as a gift for my dad. He loved Space Invaders as a child, so I tried to make a space shooter with enemies based in the classic game aliens. I actually never published this game anywhere before making this site.",
+            "short-description" : "Spcace Invaders Reimagined",
+            "date" : "August 2019"
+        },
+        "31-days-after" :
+        {
+            "title" : "31 Days After the End of The World",
+            "description" : "In 2019 I joined my first Jam, the Brazil game jam with the largest number of participants at the time, Game Jaaj 3. So I made this little platformer game where you are play the role of a mailman in a post-apocalyptic world. The game made it to the top 50 of the jam! :D",
+            "short-description" : "Game Jaaj 3",
+            "date" : "July 2019"
+        },
+        "flappy-penguin" :
+        {
+            "title" : "Flappy Penguin",
+            "description" : "Flappy Penguin was the second game I made aswell as the first game I 'finished' (if I can call it finished). It's basically a flappy bird game with shooter mechanics. I was new to GameMaker at the time, so I experimented a lot when making this one.",
+            "short-description" : "Flappy Bird Clone",
+            "date" : "March 2019"
+        }
+    },
+    "game-tags": {
+        "game-design" : "Game Design",
+        "gameplay-engeneering" : "Gameplay Engineering",
+        "unity": "Unity",
+        "gamemaker": "GameMaker",
+        "godot": "Godot",
+        "game-jam": "Game Jam",
+        "multiplayer": "Multiplayer",
+        "educational": "Educational",
+        "procedural-generation": "Procedural Generation",
+        "mobile": "Mobile",
+        "console": "Console",
+        "pc": "PC",
+        "college" : "College",
+        "personal-project" : "Personal Project",
+        "solo" : "Solo Dev",
+        "3d" : "3D",
+        "2d" : "2D",
+        "ui" : "UI"
+    },
+    "resume" : {
+        "message1" : "Resume",
+        "message2" : "Here you can download my CV aswelll as read a little about my skills and past experiences as a developer:",
+        "message3" : "Download CV",
+        "cv-file-name" : "GabrielBianchi_Resume_EN.pdf",
+        "skills":
+        {
+            "title" : "Skills",
+            "list" : [
+                "Teamwork and Communication",
+                "Level Design",
+                "Gameplay Design",
+                "Creative thinking",
+                "UX/UI",
+                "Game Engine Tech",
+                "Shading and Computer Graphics",
+                "Web Development"
+            ] 
+        },
+        "engines":
+        {
+            "title" : "Engines",
+            "list" : [
+                "Unity",
+                "GameMaker Studio",
+                "Unreal Engine 4/5",
+                "Godot"
+            ] 
+        },
+        "languages":
+        {
+            "title" : "Languages",
+            "list" : [
+                "GML",
+                "C#",
+                "Python",
+                "OpenGL/WebGL",
+                "C++",
+                "Java",
+                "JavaScript"
+            ] 
+        },
+        "experience" : 
+        {
+            "title" : "Experience:",
+            "experiences" : [
+                {
+                    "position" : "Junior Systems Analyst (Support Team)",
+                    "company" : "Icaro Tech",
+                    "location" : "Campinas, SP, Brazil",
+                    "date" : "Jan 2022 - Present",
+                    "description" : "I have been working as a Junior Systems Analyst at Icaro Tech since 2022. Providing technical support to clients in the telecommunications field, addressing their system-related issues and inquiries.",
+                    "icon" : "work"
+                },
+                {
+                    "position" : "Epic Games Game Design Professional Certificate",
+                    "company" : "Coursera",
+                    "location" : "Online",
+                    "date" : "Sep 2024 - Dec 2024",
+                    "description" : "I have taken the Game Design Professional Certificate course from Epic Games. The course covered a variety of topics, from game design theory to practical game development skills.",
+                    "icon" : "education"
+                },
+                {
+                    "position" : "Associate's Degree in Game Development",
+                    "company" : "PUC University",
+                    "location" : "Campinas, SP, Brazil",
+                    "date" : "Jan 2022 - Dec 2024",
+                    "description" : "I have completed an Associate's Degree in Game Development at the Campinas PUC University. The course takes a generalist approach, covering a wide range of topics from game art to programming.",
+                    "icon" : "education"
+                },
+                {
+                    "position" : "19th Place in Creativity Category, 89th Place Overall",
+                    "company" : "GMTK Game Jam 2022",
+                    "location" : "Remote",
+                    "date" : "Jun 2022",
+                    "description" : "Me and my team got 19th place in the creativity category (out of 6,109 entries) in the 2022 edition for the GMTK Game Jam with our game 'Roll Your Life' (see the 'portfolio' section for more info on the game).",
+                    "icon" : "award"
+                },
+                {
+                    "position" : "2nd Place Overall",
+                    "company" : "Game Jaaj 7",
+                    "location" : "Remote",
+                    "date" : "Jan 2022",
+                    "description" : "We got the 2nd place award in the 7th edition of the Game Jaaj game jam with our game 'Hey Brother' (see the 'portfolio' section for more info on the game).",
+                    "icon" : "award"
+                },
+                {
+                    "position" : "1th Place in Technical Quality Category",
+                    "company" : "Corona Jam",
+                    "location" : "Remote",
+                    "date" : "Jun 2020",
+                    "description" : "We got the 1st place award in the technical quality category in the Corona Jam game jam with our game 'Sinuca Attack' (see the 'portfolio' section for more info on the game).",
+                    "icon" : "award"
+                }
+            ]
+        }
+    },
+    "about" : 
+    {
+        "message1" : "About Me",
+        "message2" : "This is the section of the site where I feel free to talk a little about myself.",
+        "about-me" :
+        {
+            "pre-age" : "Hello! I'm Gabriel Bianchi, a ",
+            "post-age" : " years old brazilian dev. I have been a player much time before I became a game developer. My first contact with video games was playing New Super Mario Bros Wii with my father in 2010, the game that not only made me fall in love with the medium, but was also the first platformer I ever played (a genre that I love to this day). Skipping to 2016, I had my first contact with game development, when I started to learn how to use Scratch to make some simple stuff. From there on, I started to learn more and more about game development, and realized that this was what I wanted to do for the rest of my life."
+        },        
+        "fun-facts" : {
+            "title" : "Fun Facts",
+            "list" : [
+                "Have already owned 50 cats (at the same time)",
+                "Can probably beat you at Tetris",
+                "I love cooking",
+                "I also love strolls",
+                "I have a dinossaur costume",
+                "My favorite food is lasagna, and my favorite movie is Forest Gump",
+                "(A goofy movie is a close second)"
+            ]
+        },
+
+        "my-bookshelf" : {
+            "title" : "My Bookshelf",
+            "list" : [
+                "A Theory of Fun (Raph Koster)",
+                "Game Physics Engine Development (Ian Millington)",
+                "The Art of Game Design (Jesse Schell)",
+                "Rules of Play (Katie Salen and Eric Zimmerman)",
+                "Game design workshop (Tracy Fullerton)",
+                "Game Feel (Steve Swink)",
+                "Homo ludens (Johan Huizinga)",
+                "Procedural Generation in Game Design (Tarn Adams)",
+                "Essential Mathematics for Games and Interactive Applications (James Verth and Lars Bishop)"
+            ]
+        }
+    }
+}

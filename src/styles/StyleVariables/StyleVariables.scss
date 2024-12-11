@@ -1,0 +1,62 @@
+//Color Scheme
+
+$alternate-animation-time: 0.8s;
+
+:root {
+  --background-color: #03B5E5;
+  --primary-color-1: #E6D40B;
+  --primary-color-2: #bea815;
+  --accent-color-1: #385C66;
+  --accent-color-2: #374E91;
+  --accent-color-3: #0e2c7e;
+}
+
+.dark-mode {
+  --background-color: #000023;
+  --primary-color-1: #f08626;
+  --primary-color-2: #e13308;
+  --accent-color-1: #b4508d;
+  --accent-color-2: #830894;
+  --accent-color-3: #520684;
+  //verde
+  // --background-color: #000023;
+  // --primary-color-1: #f046c1;
+  // --primary-color-2: #e60488;
+  // --accent-color-1: #506bb4;
+  // --accent-color-2: #0e9883;
+  // --accent-color-3: #076276;
+  //rosa
+  // --background-color: #000023;
+  // --primary-color-1: #f046e2;
+  // --primary-color-2: #e60488;
+  // --accent-color-1: #b4508d;
+  // --accent-color-2: #062243;
+  // --accent-color-3: #520684;
+}
+
+
+
+// var(--background-color): #03B5E5 !default;
+// var(--primary-color-1): #E6D40B !default;
+// var(--primary-color-2): #bea815 !default;
+// var(--accent-color-1): #385C66 !default;
+// var(--accent-color-2): #374E91 !default;
+// var(--accent-color-3): #0e2c7e !default;
+
+// @if $dark-theme {
+//   var(--background-color): #040b21;
+//   var(--primary-color-1): #ff93e0;
+//   var(--primary-color-2): #ce75e9;
+//   var(--accent-color-1): #856de4;
+//   var(--accent-color-2): #293378;
+//   var(--accent-color-3): rgb(0, 54, 107);
+// }
+
+//Font
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('/src/assets/fonts/Lexend-Bold.ttf');
+}
+
+$font-family: 'Lexend';

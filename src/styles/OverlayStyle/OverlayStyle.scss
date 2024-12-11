@@ -1,0 +1,284 @@
+@import '../StyleVariables/StyleVariables';
+
+
+header {
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    
+    width: 100%;
+    height : 8vh;
+
+    &.scrolling
+    {
+        top: 0vh;
+        transition : top 0.25s ease-out 0s;
+    }
+    &.not-scrolling
+    {
+        top: -8vh;
+        transition : top 0.5s ease-out;
+    }
+
+    $dark-mode-button-size-min: 15vh;
+    $dark-mode-button-size-max: 20vh;
+
+    --line-height: $dark-mode-button-size-min;
+    @keyframes dark-mode-button-animation {
+        0%, 100% {
+            height: $dark-mode-button-size-min;
+        }
+        10% {
+            height: $dark-mode-button-size-max;
+        }
+    }
+
+    .dark-mode-button
+    {
+        position: absolute;
+        right: 5vw;
+        z-index: 99;
+
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0;
+
+        height : $dark-mode-button-size-min;
+
+        top: 100%;
+        
+        transform-origin: top;
+        
+        .line
+        {
+            width: 0.4rem;
+            height: calc(100% - 2rem);
+            background-color: var(--accent-color-1);
+            margin: 0;
+        }
+
+        .circle
+        {
+            margin: 0;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: var(--primary-color-2);
+            transition: background-color transform 0.25s ease-out 0s;
+        }
+
+        &.clickable
+        {
+            cursor: pointer;
+            transition: all 0.25s ease-out 0s;
+            &:hover
+            {
+                transform: translateY(0.5rem);
+                .circle 
+                {
+                    background-color: var(--primary-color-1);
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    
+    .header-body
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background-color: var(--accent-color-2);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+
+        .header-curve {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            svg {
+                position: relative;
+                display: block;
+                width: calc(127% + 1.3px);
+                height: 42px;
+            }
+            .shape-fill {
+                fill: var(--accent-color-2);
+            }
+        }
+
+        .section
+        {
+            color: var(--primary-color-2);
+            text-shadow: var(--accent-color-3) 0 0.3rem;
+
+            &.active
+            {
+                color: var(--primary-color-1);
+            }
+
+            &.unactive
+            {
+                &:hover
+                {
+                    color: var(--primary-color-1);
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .language-selection
+    {
+        position: absolute;
+        left: 0;
+        
+        height : 100%;
+        aspect-ratio: 1/1;
+
+        display: flex;
+        flex-direction: column;
+
+        
+        .language-selection-button
+        {
+            z-index: 101;
+            margin: auto;
+            width: 70%;
+            height: 70%;
+            cursor: pointer;
+            border-radius: 20%;
+            border : 0.5vh solid var(--accent-color-3);
+
+            transition: transform 0.15s ease-out 0s;
+
+            &:hover
+            {
+                transform: scale(1.1);
+            }
+        }
+        
+        .language-options
+        {
+            z-index: 99;
+            position: absolute;
+
+            width: 100%;
+            top: 100%;
+            padding-top: 3vh;
+            padding-bottom: 1vh;
+
+            background-color: var(--accent-color-2);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap : 1vh;
+
+            border-radius: 0 0 1vh 0;
+            //box-shadow: 0 1vh 10px rgba(0,0,0,0.5);
+
+            transform: translateY(-100%);
+            transition: transform 0.25s ease-out 0s;
+            
+            &.active
+            {
+                transform: translateY(0%);
+            }
+
+            .language-option
+            {
+
+                width: 70%;
+                cursor: pointer;
+                border-radius: 20%;
+
+                transition: filter transform 0.15s ease-out 0s;
+                filter: brightness(1);
+
+                &.selected 
+                {
+                    filter: brightness(0.8);
+                    cursor: default;
+                }
+
+                &:hover
+                {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    header 
+    {
+
+        .language-selection
+        {
+            position: fixed;
+            left: 0;
+            
+            height : 10vh;
+            aspect-ratio: 1/1;
+            
+            bottom: 10vh;
+            //disappears when scroll to the bottom
+
+            display: flex;
+            flex-direction: column;
+
+            .language-selection-button
+            {
+                
+            }
+
+            .language-options
+            {
+                top:auto;
+                bottom: 100%;
+                padding-top: 1vh;
+                padding-bottom: 1vh;
+
+                border-radius: 1vh;
+
+                transform: translateX(0%);
+                transition: transform 0.25s ease-out 0s;
+                
+                &.active
+                {
+                    transform: translateX(-100%);
+                }
+            }
+        }
+        
+        .header-body
+        {
+            justify-content: space-evenly;
+
+            .section
+            {
+                font-size: 200%;
+            }
+        }
+        
+        .dark-mode-button
+        {
+            right: 2vw;
+        }
+    }
+}

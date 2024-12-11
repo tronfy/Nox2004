@@ -1,0 +1,109 @@
+
+@import '../StyleVariables/StyleVariables';
+
+.footer
+{
+    position: relative;
+
+    bottom: 0;
+    width: 100%;
+    background-color: var(--accent-color-2);
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+
+    display: flex;
+    justify-content: space-between;
+
+    .footer-curve
+    {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        width: 100%;
+        //height: 10vw;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+
+        svg {
+            position: relative;
+            display: block;
+            width: calc(122% + 1.3px);
+            height: 31px;
+        }
+        
+        .shape-fill {
+            fill: var(--accent-color-2);
+        }
+    }
+
+    .contact-info
+    {
+        text-align: left;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 2vw;
+
+        color: var(--primary-color-1);
+        text-shadow : -0.2rem 0.2rem var(--accent-color-3);
+
+        button 
+        {
+            border: none;
+            cursor: pointer;
+            
+            background-color: inherit;
+            color: inherit;
+            font-size: inherit;
+            text-shadow: inherit;
+            font-family: inherit;
+
+            transition: transform 0.3s ease-out;
+            &:hover
+            {
+                transform: translateX(.5rem);
+                text-decoration: underline
+            }
+        }
+
+        span
+        {
+            font-size: 110%;
+            line-height: 10%;
+        }
+    }
+
+    .social-media
+    {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 2vw;
+        right : 0;
+        a
+        {
+            color: var(--primary-color-1);
+            text-shadow : -0.2rem 0.2rem var(--accent-color-3);
+
+            font-size: 3rem;
+            transition: transform 0.2s ease-out;
+            &:hover
+            {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .copyright
+    {
+        color: var(--background-color);
+        position: absolute;
+        bottom: 0.5rem;
+        right: 1rem;
+        text-align: right;
+    }
+}
