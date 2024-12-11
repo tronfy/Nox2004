@@ -1,6 +1,6 @@
 {
   "name": "web-portifolio-ne",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://Nox2004.github.io",
